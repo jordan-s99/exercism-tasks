@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CarsAssembleTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2021-11-11T17:53:38" hostname="Jordans-MacBook-Air.local" time="0.025">
+<testsuite name="CarsAssembleTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2021-12-22T15:40:07" hostname="Jordans-MacBook-Air.local" time="0.027">
   <properties/>
-  <testcase name="workingItemsPerMinuteForSpeedFive" classname="CarsAssembleTest" time="0.023"/>
-  <testcase name="workingItemsPerMinuteForSpeedNine" classname="CarsAssembleTest" time="0.001"/>
+  <testcase name="workingItemsPerMinuteForSpeedFive" classname="CarsAssembleTest" time="0.025"/>
+  <testcase name="workingItemsPerMinuteForSpeedNine" classname="CarsAssembleTest" time="0.0"/>
   <testcase name="workingItemsPerMinuteForSpeedZero" classname="CarsAssembleTest" time="0.0"/>
   <testcase name="workingItemsPerMinuteForSpeedEight" classname="CarsAssembleTest" time="0.0"/>
-  <testcase name="productionRatePerHourForSpeedSeven" classname="CarsAssembleTest" time="0.0"/>
+  <testcase name="productionRatePerHourForSpeedSeven" classname="CarsAssembleTest" time="0.001"/>
   <testcase name="workingItemsPerMinuteForSpeedOne" classname="CarsAssembleTest" time="0.0"/>
   <testcase name="workingItemsPerMinuteForSpeedTen" classname="CarsAssembleTest" time="0.0"/>
   <testcase name="productionRatePerHourForSpeedOne" classname="CarsAssembleTest" time="0.0"/>
   <testcase name="productionRatePerHourForSpeedTen" classname="CarsAssembleTest" time="0.0"/>
   <testcase name="productionRatePerHourForSpeedFour" classname="CarsAssembleTest" time="0.0"/>
-  <testcase name="productionRatePerHourForSpeedNine" classname="CarsAssembleTest" time="0.0"/>
+  <testcase name="productionRatePerHourForSpeedNine" classname="CarsAssembleTest" time="0.001"/>
   <testcase name="productionRatePerHourForSpeedZero" classname="CarsAssembleTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

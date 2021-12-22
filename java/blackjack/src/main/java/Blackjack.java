@@ -52,7 +52,7 @@ public class Blackjack {
         if (card1.equals("ace")) {
             aceNo = 21;
         }
-        
+
         if (aceNo == 21 && (card2.equals("ten") || card2.equals("jack") || card2.equals("queen") || card2.equals("king"))) {
              blackjack = true;
         } else if (card2.equals("ace") && (card1.equals("ten") || card1.equals("jack") || card1.equals("queen") || card1.equals("king") && aceNo != 21)) {
@@ -62,11 +62,44 @@ public class Blackjack {
     }
 
     public String largeHand(boolean isBlackjack, int dealerScore) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.largeHand method");
+        // decision logic for hand scores larger than 20points
+        // returns the string representation of a decision, given your cards
+        //function is only called if 'handScore' > 20
+        //large hand spec:
+                // if have 2 aces, must always split them (P)
+                // if have blackjack (2 cards sum to 21) and dealer has no ace/figure/10 = you                      auto win (W)
+                //  if dealer has any of those cards, then you must wait for reveal of the other                    card (S)
+        String result = "";
+
+        if (isBlackjack == false) {
+            return result = "P";
+        } else if ((isBlackjack) && (dealerScore < 10)) {
+            return result ="W";
+        } else if ((isBlackjack) && dealerScore > 10) {
+            return result = "S";
+        } else if ((isBlackjack) && dealerScore > 0) {
+            return result = "S";
+        }
+        return result;
     }
 
     public String smallHand(int handScore, int dealerScore) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.smallHand method");
+       // hand scores with < 21 points
+        // returns string
+        // if cards = 17+ (S)
+        // if cards = 11- (H)
+        // if cards = 12-16, must (S) until dealerScore 7+, then should (H)
+        String result = "";
+        if (handScore >= 17){
+            return result = "S";
+        } else if (handScore <= 11) {
+            return result = "H";
+        } else if ((handScore >= 12 && handScore <= 16) && dealerScore < 7) {
+            return result = "S";
+        } else if ((handScore >= 12 && handScore <= 16) && dealerScore >= 7) {
+            return result = "H";
+        }
+        else return null;
     }
 
     // FirstTurn returns the semi-optimal decision for the first turn, given the cards of the player and the dealer.
